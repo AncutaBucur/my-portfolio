@@ -1,0 +1,160 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0; 
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    line-height: 1.8;
+    background-color: #ffffff;
+}
+
+.title {
+    background: linear-gradient(135deg, #6a6a6a83 0%, #5ba8ff46 100%);
+    margin-left: 200px;
+    padding: 80px 20px;
+    font-weight: 800;
+    letter-spacing: -1px;
+}
+
+.content {
+    margin-left: 220px;
+    position: relative;
+    padding: 20px;
+}
+
+h2{
+    color: #2c3e50;
+    font-size: 2rem;
+    border-bottom: 2px solid #5ba8ff; /* Adds a nice underline accent */
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+#latin_text_container {
+    margin-top: 40px;
+    border-left: 5px solid #5ba8ff;
+    padding: 25px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    max-width: 80%;
+    border-radius: 0 8px 8px 0;
+}
+
+#more{
+    display: none;
+}
+
+#myBtn{
+    margin-left: 40px;
+    margin-top: 20px;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: none;
+    background-color: #999999;
+    color: rgb(0, 0, 0);
+    border-radius: 5px;
+    cursor: pointer;
+    opacity: 0.6;
+}
+
+#myBtn:hover{
+    opacity: 1;
+    background-color: #5ba8ff;
+    color: white;
+}
+
+#contact {
+    background-color: #6a6a6a69;
+    position:fixed;
+    bottom:0;
+    left: 0;
+    right:0;
+    margin-left: 200px;
+    padding-left: 10px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    justify-content: end;
+}
+
+.socials{
+    width: 20px;
+    height: 20px;
+    align-items: center;
+}
+
+#year {
+    background-color: #6a6a6a00;
+}
+
+.navigationBar {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 200px;
+    height: 100%;
+    position: fixed;
+    top:0;
+    background-color: #6a6a6a69;
+
+}
+.linksBurger {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #6a6a6a69;
+    display:flow-root
+}
+
+li {
+    background-color: #ffffff;
+    justify-items: center;
+    border: 1px solid #000000;
+    border-radius: 25px;
+    margin-top: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+li a {
+    display: block;
+    color: black;
+    padding: 5px;
+    margin-top:3px;
+    margin-bottom: 3px;
+    text-align: center;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #5ba8ff;
+    border-radius: 25px;
+}
+
+@media screen and (max-width: 600px) {
+    .navigationBar {
+        position: relative;
+        width: 100%;
+        height: auto;
+    }
+    
+    .linksBurger {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .content, .title {
+        margin-left: 0;
+    }
+
+    #contact {
+        position: static;
+        margin-top: 20px;
+        margin-left: 0;
+    }
+}
