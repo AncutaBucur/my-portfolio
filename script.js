@@ -1,9 +1,5 @@
 document.getElementById('year').textContent = new Date().getFullYear();
 
-document.getElementById('button-about').addEventListener('click', function() {
-    alert('Not implemented yet.');
-});
-
 function myFunction() {
     var dots = document.getElementById("dots");
     var moreText = document.getElementById("more");
