@@ -34,6 +34,36 @@ h2{
     margin-bottom: 20px;
 }
 
+h3{
+    margin-top:50px;
+    color: #34495e;
+    font-size: 1.5rem;
+}
+
+#my_skills {
+    padding: 20px;
+    background-color: #f0f8ff;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    max-width: 80%;
+}
+
+#project_goals {
+    padding: 20px;
+    background-color: #f0f8ff;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    max-width: 80%;
+}
+
+#technologies_used {
+    padding: 20px;
+    background-color: #f0f8ff;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    max-width: 80%;
+}
+
 #latin_text_container {
     margin-top: 40px;
     border-left: 5px solid #5ba8ff;
@@ -66,18 +96,12 @@ h2{
     background-color: #5ba8ff;
     color: white;
 }
-
-#contact {
-    background-color: #6a6a6a69;
-    position:fixed;
-    bottom:0;
-    left: 0;
-    right:0;
-    margin-left: 200px;
-    padding-left: 10px;
-    padding-top: 20px;
-    padding-bottom: 30px;
-    justify-content: end;
+footer {
+    text-align: start;
+    margin-left: 220px;
+    padding: 20px;
+    margin-top: 40px;
+    position: relative;
 }
 
 .socials{
@@ -101,20 +125,16 @@ h2{
     background-color: #6a6a6a69;
 
 }
-.linksBurger {
+
+.linksBurger li {
     list-style-type: none;
+    justify-items: center;
+    border:1px solid #000000;
+    border-radius: 25px;
     margin: 0;
     padding: 0;
     width: 200px;
-    background-color: #6a6a6a69;
-    display:flow-root
-}
-
-li {
     background-color: #ffffff;
-    justify-items: center;
-    border: 1px solid #000000;
-    border-radius: 25px;
     margin-top: 10px;
     margin-left: 5px;
     margin-right: 5px;
@@ -148,12 +168,12 @@ li a:hover {
         justify-content: space-around;
     }
 
-    .content, .title {
+    .content, .title, footer {
         margin-left: 0;
     }
 
-    #contact {
-        position: static;
+    #contact_info {
+        position: relative;
         margin-top: 20px;
         margin-left: 0;
     }
